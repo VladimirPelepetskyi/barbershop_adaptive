@@ -207,6 +207,28 @@
 			</div>
 		</div>
 	</footer>
+
+	<section class="popup">
+		<h2 class="popup__title">Личный кабинет</h2>
+		<p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
+		<form class="popup__form-login" action="https://echo.htmlacademy.ru" method="post">
+			<p class="popup__input-wrapper">
+				<label class="visually-hidden" for="login"></label>
+				<input class="popup__login popup__login--icon" type="text" name=login placeholder="Логин">
+			</p>
+			<p class="popup__input-wrapper">
+				<label class="visually-hidden" for="password"></label>
+				<input class="popup__password" type="password" name="password" placeholder="Пароль">
+			</p>
+			<p class="popup__input-wrapper">
+				<label class="popup__remember-me" for="remember">Запомните меня</label>
+				<input class="visually-hidden" type="checkbox" name="remember">
+				<a class="popup__restore" href="#">Я забыл пароль!</a>
+			</p>
+			<button class="button button__login" type="submit">Войти в личный кабинет</button>
+		</form>
+		<button class="popup__close" type="button">Закрыть</button>
+	</section>
 </body>
 
 </html>
