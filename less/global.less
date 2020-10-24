@@ -1,11 +1,28 @@
-// main: style.less
+// main: ../style.less
+
+@font-face {
+	font-weight: normal;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	src: url("../fonts/PTSansNarrowRegular.woff2") format("woff2"), url("fonts/PTSansNarrowRegular.woff") format("woff");
+}
+
+@font-face {
+	font-weight: bold;
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	src: url("../fonts/PTSansNarrowBold.woff2") format("woff2"), url("fonts/PTSansNarrowBold.woff") format("woff");
+}
 
 body {
 	min-width: @mobile-width;
-	margin: 0;
-	padding: 0;
-	
-	font-family: 'PT Sans Narrow', 'Arial', sans-serif;	
+	font-size: 18px;
+	line-height: 27px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	color: #f7f4f1;
+	font-style: normal;
+
+	background-color: @bg-darkgrey;
 }
 
 .visually-hidden:not(:focus):not(:active),
