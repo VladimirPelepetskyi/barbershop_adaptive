@@ -120,20 +120,21 @@
 
 		display: block;
 		width: 468px/634px*100%;
-	}
 
-	.advantages_item:not(:last-child) {
-		margin-bottom: 82px;
-	}
 
-	.advantages_item:not(:last-child)::after {
-		content: "";
-		position: absolute;
-		left: -27.5%;
-		bottom: -42px;
-		width: 120%;
-		height: 1px;
-		background-color: #4a4a4a;
+		&:not(:last-child) {
+			margin-bottom: 82px;
+		}
+
+		&:not(:last-child)::after {
+			content: "";
+			position: absolute;
+			left: -27.5%;
+			bottom: -42px;
+			width: 120%;
+			height: 1px;
+			background-color: #4a4a4a;
+		}
 	}
 
 	.advantages_item--fast::before,
