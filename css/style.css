@@ -832,6 +832,39 @@ img {
   text-decoration: none;
   border: 1px solid #e5ddd5;
 }
+@media (min-width: 768px) {
+  .news {
+    padding: 52px 64px 34px;
+  }
+  .news_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .news__title {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+  .news__list {
+    margin-top: 50px;
+    display: flex;
+    order: 1;
+  }
+  .news__item {
+    padding-right: 40px;
+    width: 50%;
+  }
+  .news__item:last-child {
+    display: none;
+  }
+  .news__item:not(:last-child)::after {
+    content: none;
+  }
+  .news__to-all {
+    margin-left: auto;
+    width: 160px;
+  }
+}
 .reviews {
   position: relative;
   padding: 30px 20px 28px;
