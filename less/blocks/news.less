@@ -106,7 +106,7 @@
 }
 
 .news__text {
-	.text-reset; 
+	.text-reset;
 
 	width: 75%;
 
@@ -134,10 +134,16 @@
 
 @media (min-width:@tablet-width) {
 	.news {
-		padding: 52px 64px 34px;
+		//		margin: 0 auto;
+		padding: 52px 0px 34px;
+
+		//		width: 84%;
+		//		max-width: 960px;
 	}
 
 	.news_wrapper {
+		.index-central;
+
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -153,13 +159,13 @@
 		margin-top: 50px;
 
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		order: 1;
 	}
 
 	.news__item {
-		padding-right: 40px;
-
-		width: 50%;
+		width: 43%;
 
 		&:last-child {
 			display: none;

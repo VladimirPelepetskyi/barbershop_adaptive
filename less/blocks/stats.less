@@ -117,9 +117,8 @@
 @media (min-width: @tablet-width) {
 	.stats {
 		//		width: 640px;
-		width: 84%;
-		max-width: 960px;
-		margin: 0 auto;
+		.index-central;
+
 		margin-top: -185px;
 	}
 
@@ -154,7 +153,12 @@
 		font-size: 40px;
 		line-height: 40px;
 		text-align-last: auto;
+		text-align: left;
 		text-transform: none;
+	}
+
+	.stats__slogan br {
+		display: none;
 	}
 
 	.stats__intro {
@@ -173,7 +177,7 @@
 		display: block;
 		//		width: 240px;
 		width: 50%;
-		text-align: center;
+		text-align: left;
 
 		color: rgba(0, 0, 0, 0.3);
 	}
