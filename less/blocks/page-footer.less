@@ -106,7 +106,7 @@
 
 	.page-footer__wrapper {
 		.index-central;
-		
+
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -153,5 +153,63 @@
 
 	.copyright__link {
 		width: 160px;
+	}
+}
+
+@media (min-width:@desktop-width) {
+	.page-footer__wrapper {
+		display: flex;
+	}
+
+	.contacts {
+		margin-right: 91px;
+	}
+
+	.page-footer__social {
+		order: 0;
+		width: auto;
+	}
+
+	.social__list {
+		margin-top: 10px;
+	}
+
+	.social__item {
+		margin-right: 4%;
+	}
+
+	.social__link {
+		width: 49px;
+		height: 49px;
+
+		align-items: center;
+	}
+
+	.social__link--vkontakte img {
+		width: 15px;
+		height: 17px;
+	}
+
+	.social__link--facebook img {
+		width: 10px;
+		height: 21px;
+	}
+
+	.social__link--instagram img {
+		width: 19px;
+		height: 19px;
+	}
+
+	.social__title {
+		display: block;
+
+		font-size: 18px;
+		line-height: 27px;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	.copyright {
+		margin-left: auto;
 	}
 }

@@ -929,6 +929,21 @@ img {
     width: 160px;
   }
 }
+@media (min-width: 1200px) {
+  .news__title {
+    margin-left: 69px;
+  }
+  .news__list {
+    justify-content: flex-start;
+  }
+  .news__item {
+    width: 29.1%;
+    margin-right: 40px;
+  }
+  .news__item:last-child {
+    display: flex;
+  }
+}
 .reviews {
   position: relative;
   padding: 30px 20px 28px;
@@ -1072,6 +1087,9 @@ img {
   .reviews__author-name {
     margin-bottom: 13px;
   }
+  .reviews__text {
+    padding-right: 50px;
+  }
   .reviews__prev {
     position: relative;
     display: block;
@@ -1115,6 +1133,37 @@ img {
     margin-top: -4px;
     padding: 0 25px;
     background-color: #f8f5f2;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    padding-bottom: 44px;
+  }
+  .reviews__title {
+    margin-left: 66px;
+  }
+  .reviews__item {
+    width: 86%;
+    border: 1px solid #e5ddd5;
+  }
+  .reviews__author-picture {
+    margin: auto 70px auto 0px;
+    font-size: 0px;
+    line-height: 0px;
+  }
+  .reviews__text {
+    padding-right: 80px;
+  }
+  .reviews__prev {
+    margin-right: auto;
+  }
+  .reviews__next {
+    margin-left: auto;
+  }
+  .reviews .advantages__toggles {
+    margin-top: 42px;
+    padding: 0;
+    background: none;
   }
 }
 .page-footer {
@@ -1242,6 +1291,51 @@ img {
   }
   .copyright__link {
     width: 160px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    display: flex;
+  }
+  .contacts {
+    margin-right: 91px;
+  }
+  .page-footer__social {
+    order: 0;
+    width: auto;
+  }
+  .social__list {
+    margin-top: 10px;
+  }
+  .social__item {
+    margin-right: 4%;
+  }
+  .social__link {
+    width: 49px;
+    height: 49px;
+    align-items: center;
+  }
+  .social__link--vkontakte img {
+    width: 15px;
+    height: 17px;
+  }
+  .social__link--facebook img {
+    width: 10px;
+    height: 21px;
+  }
+  .social__link--instagram img {
+    width: 19px;
+    height: 19px;
+  }
+  .social__title {
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: normal;
+    text-align: center;
+  }
+  .copyright {
+    margin-left: auto;
   }
 }
 .popup {

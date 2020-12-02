@@ -182,3 +182,22 @@
 		width: 160px;
 	}
 }
+
+@media (min-width:@desktop-width) {
+	.news__title {
+		margin-left: 69px;
+	}
+
+	.news__list {
+		justify-content: flex-start;
+	}
+
+	.news__item {
+		width: 29.1%;
+		margin-right: 40px;
+
+		&:last-child {
+			display: flex;
+		}
+	}
+}
