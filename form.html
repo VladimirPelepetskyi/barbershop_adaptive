@@ -12,20 +12,24 @@
 <body class="inner-page">
 	<header class="page-header">
 		<a href="" class="page-header__logo">
-			<img class="page-header-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+			<picture>
+				<source media="(min-width: 1200px)" srcset=img/logotype-desktop.svg>
+				<source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+				<img class="page-header-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+			</picture>
 		</a>
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__list site-list">
 					<li class="site-list__item">
-						<a>Главная</a>
+						<a href="index.html">Главная</a>
 					</li>
 					<li class="site-list__item">
 						<a href="photo.html">Наши работы</a>
 					</li>
 					<li class="site-list__item site-list__item--active">
-						<a href="form.html">Записаться</a>
+						<a>Записаться</a>
 					</li>
 					<li class="site-list__item">
 						<a href="#">Контакты</a>
@@ -36,7 +40,13 @@
 				</ul>
 				<ul class="main-nav__list user-list">
 					<li class="user-list__item">
-						<a class="user-list__login" href="login.html">Войти</a>
+						<a class="user-list__login" href="login.html">
+							<svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+								<polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
+								<polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
+							</svg>
+							Войти
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -45,10 +55,10 @@
 	<main class="page-main">
 		<section class="sign-up">
 			<h2 class="sign-up__title">Запись на стрижку</h2>
-			<button class="sign-up__to-button button">На главную</button>
+			<button class="sign-up__to-main button">На главную</button>
 			<form class="sign-up__form" action="https://echo.htmlacademy.ru" method="post">
-				<fieldset class="sign-up__contacts contacts">
-					<ul class="contacts__list">
+				<fieldset class="sign-up__contacts">
+					<ul class="contacts__list-top">
 						<li class="contacts__item">
 							<input class="contacts__input" type="text" name="Name" placeholder="Имя">
 						</li>
@@ -58,6 +68,8 @@
 						<li class="contacts__item">
 							<input class="contacts__input" type="text" name="Patronymic" placeholder="Отчество">
 						</li>
+					</ul>
+					<ul class="contacts__list-bottom">
 						<li class="contacts__item">
 							<input class="contacts__input" type="text" name="mobile-phone" placeholder="Контактный телефон">
 						</li>
@@ -73,23 +85,23 @@
 					<legend class="beard-model__title">Выберите модель бороды:</legend>
 					<ul class="beard-model__list">
 						<li class="beard-model__item beard-model__item--admiral">
-							<input class="visually-hidden beard-model__radio" type="radio" name="beard-model" value="admiral" id="admiral-radio" checked>
+							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="admiral" id="admiral-radio" checked>
 							<label class="beard-model__name" for="admiral-radio">Адмирал</label>
 						</li>
 						<li class="beard-model__item beard-model__item--lumberjack">
-							<input class="visually-hidden beard-model__radio" type="radio" name="beard-model" value="lumberjack" id="lumberjack-radio">
+							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="lumberjack" id="lumberjack-radio">
 							<label class="beard-model__name" for="lumberjack-radio">Лесоруб</label>
 						</li>
 						<li class="beard-model__item beard-model__item--polar">
-							<input class="visually-hidden beard-model__radio" type="radio" name="beard-model" value="polar" id="polar-radio">
+							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="polar" id="polar-radio">
 							<label class="beard-model__name" for="polar-radio">Полярник</label>
 						</li>
 						<li class="beard-model__item beard-model__item--boyar">
-							<input class="visually-hidden beard-model__radio" type="radio" name="beard-model" value="boyar" id="boyar-radio">
+							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="boyar" id="boyar-radio">
 							<label class="beard-model__name" for="boyar-radio">Боярин</label>
 						</li>
 						<li class="beard-model__item beard-model__item--sage">
-							<input class="visually-hidden beard-model__radio" type="radio" name="beard-model" value="sage" id="sage-radio">
+							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="sage" id="sage-radio">
 							<label class="beard-model__name" for="sage-radio">Мудрец</label>
 						</li>
 					</ul>
@@ -126,7 +138,7 @@
 	<footer class="page-footer">
 		<div class="page-footer__wrapper">
 			<div class="page-footer__contacts contacts">
-				<b class="contacts__title">Барбершоп «Бородинский»</b>
+				<b class="contacts__title">Барбершоп Бородинский</b>
 				<p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
 					<a class="contacts__phone" href="tel:+78125556666">
 						<span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
@@ -137,13 +149,19 @@
 				<b class="social__title">Давайте дружить!</b>
 				<ul class="social__list">
 					<li class="social__item">
-						<a class="social__link social__link--vkontakte" href="#">Мы Вконтакте</a>
+						<a class="social__link social__link--vkontakte" href="#">
+							<img width="23" height="26" src="img/vkontakte.svg" alt="Иконка социальной сети Вконтакте">
+						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+						<a class="social__link social__link--facebook" href="#">
+							<img width="18" height="39" src="img/facebook.svg" alt="Иконка социальной сети Фейсбук">
+						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+						<a class="social__link social__link--instagram" href="#">
+							<img width="36" height="36" src="img/instagram.svg" alt="Иконка социальной сети Инстаграм">
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -188,7 +206,7 @@
 			будет минутка.</p>
 		<button class="popup__button button">Закрыть окно</button>
 	</section>
-
+	<script src="scripts/main-nav.js"></script>
 </body>
 
 </html>
