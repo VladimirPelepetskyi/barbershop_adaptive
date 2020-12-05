@@ -54,8 +54,11 @@
 	</header>
 	<main class="page-main">
 		<section class="sign-up">
+		<div class="sign-up__wrapper">
+		<div class="sign-up__wrapper-top">
 			<h2 class="sign-up__title">Запись на стрижку</h2>
 			<button class="sign-up__to-main button">На главную</button>
+			</div>
 			<form class="sign-up__form" action="https://echo.htmlacademy.ru" method="post">
 				<fieldset class="sign-up__contacts">
 					<ul class="contacts__list-top">
@@ -110,29 +113,30 @@
 					<legend class="additonal-services__title">Дополнительные услуги:</legend>
 					<ul class="additonal-services__list">
 						<li class="additonal-services__item">
-							<input class="visually-hidden additonal-services__checkbox" type="checkbox" name="beard-paint" id="beard-paint-checkbox" checked>
-							<label class="additonal-services__name" for="beard-paint-checkbox">Покрасить бороду</label>
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="beard-paint" id="beard-paint-checkbox" checked>
+							<label class="additonal-services__name" for="beard-paint-checkbox"><span>Покрасить бороду</span></label>
 						</li>
 						<li class="additonal-services__item">
-							<input class="visually-hidden additonal-services__checkbox" type="checkbox" name="beard-comb" id="beard-comb-checkbox" checked>
-							<label class="additonal-services__name" for="beard-comb-checkbox">Причесать бороду</label>
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="beard-comb" id="beard-comb-checkbox" checked>
+							<label class="additonal-services__name" for="beard-comb-checkbox"><span>Причесать бороду</span></label>
 						</li>
 						<li class="additonal-services__item">
-							<input class="visually-hidden additonal-services__checkbox" type="checkbox" name="remove-grey" id="remove-grey-checkbox">
-							<label class="additonal-services__name" for="remove-grey-checkbox">Убрать седину</label>
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="remove-grey" id="remove-grey-checkbox">
+							<label class="additonal-services__name" for="remove-grey-checkbox"><span>Убрать седину</span></label>
 						</li>
 						<li class="additonal-services__item">
-							<input class="visually-hidden additonal-services__checkbox" type="checkbox" name="twist-mustache" id="twist-mustache-checkbox">
-							<label class="additonal-services__name" for="twist-mustache-checkbox">Накрутить усы</label>
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="twist-mustache" id="twist-mustache-checkbox">
+							<label class="additonal-services__name" for="twist-mustache-checkbox"><span>Накрутить усы</span></label>
 						</li>
 						<li class="additonal-services__item">
-							<input class="visually-hidden additonal-services__checkbox" type="checkbox" name="polish" id="polish-checkbox">
-							<label class="additonal-services__name" for="polish-checkbox">Отполировать лысину</label>
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="polish" id="polish-checkbox">
+							<label class="additonal-services__name" for="polish-checkbox"><span>Отполировать лысину</span></label>
 						</li>
 					</ul>
 				</fieldset>
 				<button class="sign-up__button button" type="submit">Отправить заявку</button>
 			</form>
+			</div>
 		</section>
 	</main>
 	<footer class="page-footer">

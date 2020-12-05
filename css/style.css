@@ -79,6 +79,9 @@ img {
     background-position: center -9px;
     background-size: 100% auto;
   }
+  .inner-page .page-header__logo {
+    height: 228px;
+  }
   .page-header__logo img {
     display: block;
     width: 370px;
@@ -97,6 +100,9 @@ img {
     height: 648px;
     background-position: center 0;
     background-size: cover;
+  }
+  .inner-page .page-header__logo {
+    height: 308px;
   }
   .page-header__logo img {
     margin-top: 57px;
@@ -1342,9 +1348,19 @@ img {
   display: none;
 }
 .sign-up {
-  padding: 30px 20px 0px;
+  position: relative;
+  padding: 30px 20px 73px;
   color: #000000;
   background-color: #f8f5f2;
+}
+.sign-up::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(to bottom left, transparent 50%, #292929 50.9%) left / 51.5% 100% no-repeat, linear-gradient(to bottom right, transparent 50%, #292929 50.9%) right / 51.5% 100% no-repeat;
 }
 .sign-up__title {
   margin: 0;
@@ -1379,7 +1395,7 @@ img {
   margin-bottom: 26px;
 }
 .contacts__input {
-  padding: 10px 20px;
+  padding: 9px 20px;
   margin-bottom: 6px;
   width: 100%;
   font-size: 18px;
@@ -1397,12 +1413,17 @@ img {
   height: 112px;
   resize: none;
 }
-.beard-model__title {
+.beard-model__title,
+.additonal-services__title {
+  position: relative;
   margin-bottom: 100px;
   font-size: 20px;
   line-height: 27px;
   text-transform: uppercase;
   text-align: center;
+}
+.additonal-services__title {
+  margin-bottom: 35px;
 }
 .beard-model__list {
   margin: 0;
@@ -1413,9 +1434,26 @@ img {
 }
 .beard-model__item {
   position: relative;
-  margin-bottom: 184px;
+  padding-bottom: 184px;
   width: 33.33333333%;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center 37px;
+}
+.beard-model__item--admiral {
+  background-image: url(../img/beard-admiral.svg);
+}
+.beard-model__item--lumberjack {
+  background-image: url(../img/beard-admiral.svg);
+}
+.beard-model__item--polar {
+  background-image: url(../img/beard-polar.svg);
+}
+.beard-model__item--boyar {
+  background-image: url(../img/beard-boyar.svg);
+}
+.beard-model__item--sage {
+  background-image: url(../img/beard-sage.svg);
 }
 .filter-input-radio + label::before {
   content: "";
@@ -1445,4 +1483,140 @@ img {
   line-height: 24px;
   font-weight: normal;
   text-transform: lowercase;
+}
+.additonal-services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.additonal-services__item {
+  position: relative;
+  margin-bottom: 27px;
+  padding-left: 60px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #000000;
+}
+.additonal-services__item:last-child {
+  margin-bottom: 0;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e5ddd5;
+  background-color: #ffffff;
+}
+.filter-input-checkbox:checked + label span::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  width: 2px;
+  height: 9px;
+  transform: rotate(-45deg);
+  background-color: #000000;
+}
+.filter-input-checkbox:checked + label span::after {
+  content: "";
+  position: absolute;
+  top: 4.5px;
+  left: 20.5px;
+  width: 2px;
+  height: 20.8px;
+  transform: rotate(45deg);
+  background-color: #000000;
+}
+.sign-up__button {
+  display: block;
+  padding: 15px 15px;
+  margin-top: 50px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background-color: #826550;
+}
+@media (min-width: 768px) {
+  .sign-up {
+    padding: 54px 0px 76px;
+  }
+  .sign-up::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: linear-gradient(to bottom left, transparent 50%, #f8f5f2 50.9%) left / 51.5% 100% no-repeat, linear-gradient(to bottom right, transparent 50%, #f8f5f2 50.9%) right / 51.5% 100% no-repeat;
+  }
+  .sign-up::after {
+    content: none;
+  }
+  .sign-up__wrapper {
+    margin: 0 auto;
+    width: 84%;
+    max-width: 960px;
+  }
+  .sign-up__wrapper-top {
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sign-up__title {
+    margin: 0;
+    font-size: 40px;
+  }
+  .sign-up__to-main {
+    padding: 15px 15px;
+    display: block;
+    width: 158px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #e5ddd5;
+    background: none;
+  }
+  .sign-up__form .sign-up__contacts {
+    margin-bottom: 57px;
+  }
+  .contacts__list-top {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts__list-top .contacts__item {
+    width: 33.33333333%;
+  }
+  .contacts__list-top .contacts__input {
+    margin-bottom: 0;
+  }
+  .contacts__input {
+    padding: 19px 25px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .contacts__list-bottom .contacts__input {
+    margin-bottom: 35px;
+  }
+  .contacts__list-bottom .contacts__input--message {
+    height: 211px;
+    margin-bottom: 0;
+  }
+  .beard-model__title::before {
+    content: "";
+    position: absolute;
+  }
 }
