@@ -1417,12 +1417,14 @@ img {
 .additonal-services__title {
   position: relative;
   margin-bottom: 100px;
+  display: block;
   font-size: 20px;
   line-height: 27px;
   text-transform: uppercase;
   text-align: center;
 }
 .additonal-services__title {
+  margin-top: -23px;
   margin-bottom: 35px;
 }
 .beard-model__list {
@@ -1492,14 +1494,11 @@ img {
 .additonal-services__item {
   position: relative;
   margin-bottom: 27px;
-  padding-left: 60px;
+  padding-left: 64px;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
   color: #000000;
-}
-.additonal-services__item:last-child {
-  margin-bottom: 0;
 }
 .filter-input-checkbox + label::before {
   content: "";
@@ -1535,7 +1534,7 @@ img {
 .sign-up__button {
   display: block;
   padding: 15px 15px;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   font-size: 18px;
   line-height: 24px;
@@ -1584,10 +1583,11 @@ img {
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
+    color: #000000;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
     border: 1px solid #e5ddd5;
-    background: none;
   }
   .sign-up__form .sign-up__contacts {
     margin-bottom: 57px;
@@ -1615,8 +1615,62 @@ img {
     height: 211px;
     margin-bottom: 0;
   }
-  .beard-model__title::before {
+  .beard-model__wrapper {
+    position: relative;
+  }
+  .beard-model__wrapper::before {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    border: 1px solid #E5DDD5;
+  }
+  .beard-model__title {
+    margin: 0 auto 120px;
+    width: 60%;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: #f8f5f2;
+  }
+  .beard-model__list {
+    justify-content: flex-start;
+  }
+  .beard-model__item {
+    width: 15%;
+  }
+  .beard-model__item:not(:nth-child(5n)) {
+    margin-right: 6.22%;
+  }
+  .additonal-services__wrapper {
+    position: relative;
+  }
+  .additonal-services__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    border: 1px solid #E5DDD5;
+  }
+  .additonal-services__title {
+    margin: 0 auto 69px;
+    width: 60%;
+    font-size: 30px;
+    line-height: 30px;
+    background-color: #f8f5f2;
+  }
+  .additonal-services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .additonal-services__item {
+    width: 40%;
+  }
+  .sign-up__button {
+    margin-top: 32px;
   }
 }

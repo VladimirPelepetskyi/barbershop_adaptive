@@ -4,7 +4,7 @@
 
 	color: #000000;
 
-	background-color: #f8f5f2;
+	background-color: @bg-form;
 
 	&::after {
 		content: "";
@@ -89,6 +89,8 @@
 
 	margin-bottom: 100px;
 
+	display: block;
+
 	font-size: 20px;
 	line-height: 27px;
 	text-transform: uppercase;
@@ -96,6 +98,7 @@
 }
 
 .additonal-services__title {
+	margin-top: -23px;
 	margin-bottom: 35px;
 }
 
@@ -185,16 +188,12 @@
 .additonal-services__item {
 	position: relative;
 	margin-bottom: 27px;
-	padding-left: 60px;
+	padding-left: 64px;
 
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: normal;
 	color: #000000;
-
-	&:last-child {
-		margin-bottom: 0;
-	}
 }
 
 .filter-input-checkbox + label::before {
@@ -241,7 +240,7 @@
 .sign-up__button {
 	display: block;
 	padding: 15px 15px;
-	margin-top: 50px;
+	margin-top: 20px;
 	width: 100%;
 
 	font-size: 18px;
@@ -266,7 +265,7 @@
 			left: 0;
 			width: 100%;
 			height: 35px;
-			background: linear-gradient(to bottom left, transparent 50%, #f8f5f2 50.9%) left / 51.5% 100% no-repeat, linear-gradient(to bottom right, transparent 50%, #f8f5f2 50.9%) right / 51.5% 100% no-repeat;
+			background: linear-gradient(to bottom left, transparent 50%, @bg-form 50.9%) left / 51.5% 100% no-repeat, linear-gradient(to bottom right, transparent 50%, @bg-form 50.9%) right / 51.5% 100% no-repeat;
 		}
 
 		&::after {
@@ -300,11 +299,12 @@
 		font-size: 18px;
 		line-height: 24px;
 		font-weight: bold;
+		color: #000000;
 		text-transform: uppercase;
 		text-align: center;
+		text-decoration: none;
 
 		border: 1px solid #e5ddd5;
-		background: none;
 	}
 
 	.sign-up__form .sign-up__contacts {
@@ -344,9 +344,80 @@
 		}
 	}
 
-	.beard-model__title::before {
-		content: "";
-		position: absolute;
+	.beard-model__wrapper {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+
+			width: 100%;
+
+			border: 1px solid #E5DDD5;
+		}
 	}
 
+	.beard-model__title {
+		margin: 0 auto 120px;
+		width: 60%;
+		font-size: 30px;
+		line-height: 30px;
+
+		background-color: @bg-form;
+	}
+
+	.beard-model__list {
+		justify-content: flex-start;
+	}
+
+	.beard-model__item {
+		width: 15%;
+
+		&:not(:nth-child(5n)) {
+			margin-right: 6.22%;
+		}
+	}
+
+	.additonal-services__wrapper {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+
+			width: 100%;
+
+			border: 1px solid #E5DDD5;
+		}
+	}
+
+	.additonal-services__title {
+		margin: 0 auto 69px;
+		width: 60%;
+		font-size: 30px;
+		line-height: 30px;
+
+		background-color: @bg-form;
+	}
+
+	.additonal-services__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.additonal-services__item {
+		width: 40%;
+	}
+
+
+	.sign-up__button {
+		margin-top: 32px;
+	}
 }

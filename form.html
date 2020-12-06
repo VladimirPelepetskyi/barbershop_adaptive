@@ -54,88 +54,92 @@
 	</header>
 	<main class="page-main">
 		<section class="sign-up">
-		<div class="sign-up__wrapper">
-		<div class="sign-up__wrapper-top">
-			<h2 class="sign-up__title">Запись на стрижку</h2>
-			<button class="sign-up__to-main button">На главную</button>
-			</div>
-			<form class="sign-up__form" action="https://echo.htmlacademy.ru" method="post">
-				<fieldset class="sign-up__contacts">
-					<ul class="contacts__list-top">
-						<li class="contacts__item">
-							<input class="contacts__input" type="text" name="Name" placeholder="Имя">
-						</li>
-						<li class="contacts__item">
-							<input class="contacts__input" type="text" name="Surname" placeholder="Фамилия">
-						</li>
-						<li class="contacts__item">
-							<input class="contacts__input" type="text" name="Patronymic" placeholder="Отчество">
-						</li>
-					</ul>
-					<ul class="contacts__list-bottom">
-						<li class="contacts__item">
-							<input class="contacts__input" type="text" name="mobile-phone" placeholder="Контактный телефон">
-						</li>
-						<li class="contacts__item">
-							<input class="contacts__input" type="email" name="email" placeholder="Контактный e-mail">
-						</li>
-						<li class="contacts__item">
-							<textarea class="contacts__input contacts__input--message" name="information-for-the-master" cols="30" rows="10" placeholder="Доп. информация для мастера"></textarea>
-						</li>
-					</ul>
-				</fieldset>
-				<fieldset class="sign-up__beard-model beard-model">
-					<legend class="beard-model__title">Выберите модель бороды:</legend>
-					<ul class="beard-model__list">
-						<li class="beard-model__item beard-model__item--admiral">
-							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="admiral" id="admiral-radio" checked>
-							<label class="beard-model__name" for="admiral-radio">Адмирал</label>
-						</li>
-						<li class="beard-model__item beard-model__item--lumberjack">
-							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="lumberjack" id="lumberjack-radio">
-							<label class="beard-model__name" for="lumberjack-radio">Лесоруб</label>
-						</li>
-						<li class="beard-model__item beard-model__item--polar">
-							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="polar" id="polar-radio">
-							<label class="beard-model__name" for="polar-radio">Полярник</label>
-						</li>
-						<li class="beard-model__item beard-model__item--boyar">
-							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="boyar" id="boyar-radio">
-							<label class="beard-model__name" for="boyar-radio">Боярин</label>
-						</li>
-						<li class="beard-model__item beard-model__item--sage">
-							<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="sage" id="sage-radio">
-							<label class="beard-model__name" for="sage-radio">Мудрец</label>
-						</li>
-					</ul>
-				</fieldset>
-				<fieldset class="sign-up__additonal-services additonal-services">
-					<legend class="additonal-services__title">Дополнительные услуги:</legend>
-					<ul class="additonal-services__list">
-						<li class="additonal-services__item">
-							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="beard-paint" id="beard-paint-checkbox" checked>
-							<label class="additonal-services__name" for="beard-paint-checkbox"><span>Покрасить бороду</span></label>
-						</li>
-						<li class="additonal-services__item">
-							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="beard-comb" id="beard-comb-checkbox" checked>
-							<label class="additonal-services__name" for="beard-comb-checkbox"><span>Причесать бороду</span></label>
-						</li>
-						<li class="additonal-services__item">
-							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="remove-grey" id="remove-grey-checkbox">
-							<label class="additonal-services__name" for="remove-grey-checkbox"><span>Убрать седину</span></label>
-						</li>
-						<li class="additonal-services__item">
-							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="twist-mustache" id="twist-mustache-checkbox">
-							<label class="additonal-services__name" for="twist-mustache-checkbox"><span>Накрутить усы</span></label>
-						</li>
-						<li class="additonal-services__item">
-							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="polish" id="polish-checkbox">
-							<label class="additonal-services__name" for="polish-checkbox"><span>Отполировать лысину</span></label>
-						</li>
-					</ul>
-				</fieldset>
-				<button class="sign-up__button button" type="submit">Отправить заявку</button>
-			</form>
+			<div class="sign-up__wrapper">
+				<div class="sign-up__wrapper-top">
+					<h2 class="sign-up__title">Запись на стрижку</h2>
+					<a href="index.html" class="sign-up__to-main button">На главную</a>
+				</div>
+				<form class="sign-up__form" action="https://echo.htmlacademy.ru" method="post">
+					<fieldset class="sign-up__contacts">
+						<ul class="contacts__list-top">
+							<li class="contacts__item">
+								<input class="contacts__input" type="text" name="Name" placeholder="Имя">
+							</li>
+							<li class="contacts__item">
+								<input class="contacts__input" type="text" name="Surname" placeholder="Фамилия">
+							</li>
+							<li class="contacts__item">
+								<input class="contacts__input" type="text" name="Patronymic" placeholder="Отчество">
+							</li>
+						</ul>
+						<ul class="contacts__list-bottom">
+							<li class="contacts__item">
+								<input class="contacts__input" type="text" name="mobile-phone" placeholder="Контактный телефон">
+							</li>
+							<li class="contacts__item">
+								<input class="contacts__input" type="email" name="email" placeholder="Контактный e-mail">
+							</li>
+							<li class="contacts__item">
+								<textarea class="contacts__input contacts__input--message" name="information-for-the-master" cols="30" rows="10" placeholder="Доп. информация для мастера"></textarea>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="sign-up__beard-model beard-model">
+						<div class="beard-model__wrapper">
+							<legend class="beard-model__title">Выберите модель бороды:</legend>
+						</div>
+						<ul class="beard-model__list">
+							<li class="beard-model__item beard-model__item--admiral">
+								<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="admiral" id="admiral-radio" checked>
+								<label class="beard-model__name" for="admiral-radio">Адмирал</label>
+							</li>
+							<li class="beard-model__item beard-model__item--lumberjack">
+								<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="lumberjack" id="lumberjack-radio">
+								<label class="beard-model__name" for="lumberjack-radio">Лесоруб</label>
+							</li>
+							<li class="beard-model__item beard-model__item--polar">
+								<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="polar" id="polar-radio">
+								<label class="beard-model__name" for="polar-radio">Полярник</label>
+							</li>
+							<li class="beard-model__item beard-model__item--boyar">
+								<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="boyar" id="boyar-radio">
+								<label class="beard-model__name" for="boyar-radio">Боярин</label>
+							</li>
+							<li class="beard-model__item beard-model__item--sage">
+								<input class="visually-hidden filter-input-radio" type="radio" name="beard-model" value="sage" id="sage-radio">
+								<label class="beard-model__name" for="sage-radio">Мудрец</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="sign-up__additonal-services additonal-services">
+					<div class="additonal-services__wrapper">
+						<legend class="additonal-services__title">Дополнительные услуги:</legend>
+						</div>
+						<ul class="additonal-services__list">
+							<li class="additonal-services__item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="beard-paint" id="beard-paint-checkbox" checked>
+								<label class="additonal-services__name" for="beard-paint-checkbox"><span>Покрасить бороду</span></label>
+							</li>
+							<li class="additonal-services__item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="beard-comb" id="beard-comb-checkbox" checked>
+								<label class="additonal-services__name" for="beard-comb-checkbox"><span>Причесать бороду</span></label>
+							</li>
+							<li class="additonal-services__item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="remove-grey" id="remove-grey-checkbox">
+								<label class="additonal-services__name" for="remove-grey-checkbox"><span>Убрать седину</span></label>
+							</li>
+							<li class="additonal-services__item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="twist-mustache" id="twist-mustache-checkbox">
+								<label class="additonal-services__name" for="twist-mustache-checkbox"><span>Накрутить усы</span></label>
+							</li>
+							<li class="additonal-services__item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="polish" id="polish-checkbox">
+								<label class="additonal-services__name" for="polish-checkbox"><span>Отполировать лысину</span></label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="sign-up__button button" type="submit">Отправить заявку</button>
+				</form>
 			</div>
 		</section>
 	</main>
