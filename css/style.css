@@ -1494,7 +1494,7 @@ img {
 .additonal-services__item {
   position: relative;
   margin-bottom: 27px;
-  padding-left: 64px;
+  padding-left: 59px;
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
@@ -1638,10 +1638,19 @@ img {
     justify-content: flex-start;
   }
   .beard-model__item {
+    padding-bottom: 230px;
     width: 15%;
+    background-position: center 58px;
   }
   .beard-model__item:not(:nth-child(5n)) {
     margin-right: 6.22%;
+  }
+  .beard-model__name,
+  .additonal-services__name {
+    font-size: 24px;
+  }
+  .sign-up__form .sign-up__additonal-services {
+    margin-top: -36px;
   }
   .additonal-services__wrapper {
     position: relative;
@@ -1672,5 +1681,26 @@ img {
   }
   .sign-up__button {
     margin-top: 32px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__list-top .contacts__item {
+    width: 31%;
+  }
+  .contacts__list-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contacts__list-bottom .contacts__item:not(:last-child) {
+    width: 48%;
+  }
+  .contacts__list-bottom .contacts__item:last-child {
+    width: 100%;
+  }
+  .additonal-services__item {
+    width: 27.18%;
   }
 }
