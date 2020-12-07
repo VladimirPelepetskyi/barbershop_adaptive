@@ -986,6 +986,7 @@ img {
 .reviews__prev,
 .reviews__next {
   display: none;
+  cursor: pointer;
 }
 .reviews__item,
 .reviews__author-picture,
@@ -1544,6 +1545,7 @@ img {
   text-align: center;
   border: none;
   background-color: #826550;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .sign-up {
@@ -1703,4 +1705,108 @@ img {
   .additonal-services__item {
     width: 27.18%;
   }
+}
+.works {
+  padding: 33px 20px 0px;
+  color: #000000;
+  background-color: #f8f5f2;
+}
+.works__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.works__to-button {
+  display: none;
+}
+.works__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.works__picture-wrapper {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+.works__description-wrapper {
+  margin-top: -1px;
+  padding: 23px 34px 32px 23px;
+  border: 1px solid #e5ddd5;
+}
+.works__name {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: bold;
+  text-align: center;
+}
+.works__text {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+.works__sublist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 17px;
+  margin-left: 34px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.works__sublist-item {
+  position: relative;
+  margin-bottom: 4px;
+  width: 28%;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+.works__sublist-item:nth-child(2n-1) {
+  margin-right: 80px;
+}
+.works__sublist-item--cut::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/icon-scissors.svg");
+}
+.works__sublist-item--shaving::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -46px;
+  transform: translateY(-50%);
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/icon-beard.svg");
+}
+.works__sublist .works__sublist-item--mustache {
+  margin-left: 10px;
+  margin-right: 70px;
+}
+.works__sublist .works__sublist-item--mustache::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -59px;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 12px;
+  background-image: url("../img/icon-mustache.svg");
 }
