@@ -1882,17 +1882,19 @@ img {
     border: 1px solid #e5ddd5;
   }
   .works__item {
+    margin-bottom: 40px;
     display: flex;
+  }
+  .works__item .works__item--month {
+    height: 480px;
   }
   .works__picture-wrapper {
     min-width: 270px;
     height: 293px;
   }
-  .works__item {
-    margin-bottom: 40px;
-  }
-  .works__item .works__item--month {
-    height: 480px;
+  .works__item--month::after {
+    top: 35px;
+    bottom: auto;
   }
   .works__description-wrapper {
     margin-top: 0;
@@ -1967,7 +1969,6 @@ img {
   display: none;
 }
 .prices__name {
-  width: 73%;
   font-weight: bold;
 }
 .prices__extra {
@@ -1992,11 +1993,10 @@ img {
 .working-hours__wrapper::before {
   content: "";
   flex-shrink: 0;
-  margin-left: auto;
   margin-right: 35px;
   width: 58px;
   height: 57px;
-  background-image: url(../img/clock.svg);
+  background-image: url(../img/clock-mobile.svg);
 }
 .working-hours__text {
   margin-right: auto;
@@ -2006,4 +2006,65 @@ img {
   font-weight: normal;
   text-align: left;
   box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .prices {
+    padding: 52px 0px 56px;
+  }
+  .prices::after {
+    content: none;
+  }
+  .prices__wrapper {
+    margin: 0 auto;
+    width: 84%;
+    max-width: 960px;
+  }
+  .prices__title {
+    margin-bottom: 53px;
+    font-size: 40px;
+    text-align: left;
+  }
+  .prices__item {
+    margin-bottom: 0;
+    display: table-row;
+  }
+  .prices__item td {
+    padding: 15px 15px;
+    border: 1px solid #4a4a4a;
+    text-align: left;
+  }
+  .prices__item .prices__number {
+    display: table-cell;
+    width: 11.25%;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+  }
+  .prices__name {
+    width: 39.0625%;
+  }
+  .prices__extra {
+    width: 25%;
+    order: 0;
+  }
+  .prices__field {
+    width: 24.6875%;
+  }
+  .working-hours {
+    padding: 2.72421665%;
+  }
+  .hours {
+    margin-top: 9px;
+  }
+  .working-hours__wrapper::before {
+    margin-left: auto;
+    margin-right: 86px;
+    width: 72px;
+    height: 71px;
+    background-image: url(../img/clock-tablet.svg);
+  }
+  .working-hours__text {
+    font-size: 30px;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
 }

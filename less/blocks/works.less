@@ -203,7 +203,6 @@
 		font-size: 40px;
 	}
 
-
 	.works__to-button {
 		display: block;
 
@@ -225,7 +224,13 @@
 	}
 
 	.works__item {
+		margin-bottom: 40px;
+
 		display: flex;
+
+		.works__item--month {
+			height: 480px;
+		}
 	}
 
 	.works__picture-wrapper {
@@ -234,15 +239,11 @@
 
 	}
 
-	.works__item {
-		margin-bottom: 40px;
-
-
-
-		.works__item--month {
-			height: 480px;
-		}
+	.works__item--month::after {
+		top: 35px;
+		bottom: auto;
 	}
+
 
 	.works__description-wrapper {
 		margin-top: 0;

@@ -75,7 +75,6 @@
 }
 
 .prices__name {
-	width: 73%;
 	font-weight: bold;
 }
 
@@ -108,13 +107,12 @@
 		content: "";
 		flex-shrink: 0;
 
-		margin-left: auto;
 		margin-right: 35px;
 
 		width: 58px;
 		height: 57px;
 
-		background-image: url(../img/clock.svg);
+		background-image: url(../img/clock-mobile.svg);
 	}
 }
 
@@ -129,4 +127,87 @@
 	text-align: left;
 
 	box-sizing: border-box;
+}
+
+
+@media (min-width:@tablet-width) {
+	.prices {
+		padding: 52px 0px 56px;
+
+		&::after {
+			content: none;
+		}
+	}
+
+	.prices__wrapper {
+		.index-central;
+	}
+
+	.prices__title {
+		margin-bottom: 53px;
+
+		font-size: 40px;
+		text-align: left;
+	}
+
+	.prices__item {
+		margin-bottom: 0;
+
+		display: table-row;
+
+		td {
+			padding: 15px 15px;
+			border: 1px solid #4a4a4a;
+			text-align: left;
+		}
+
+
+		.prices__number {
+
+			display: table-cell;
+			width: 72px/640px*100%;
+
+			color: rgba(255, 255, 255, 0.3);
+			text-align: center;
+		}
+	}
+
+	.prices__name {
+		width: 250px/640px*100%;
+	}
+
+	.prices__extra {
+		width: 160px/640px*100%;
+		order: 0;
+	}
+
+	.prices__field {
+		width: 158px/640px*100%;
+	}
+
+	.working-hours {
+		padding: 20px/734.156px*100%;
+	}
+
+	.hours {
+		margin-top: 9px;
+	}
+
+	.working-hours__wrapper {
+		&::before {
+			margin-left: auto;
+			margin-right: 86px;
+
+			width: 72px;
+			height: 71px;
+
+			background-image: url(../img/clock-tablet.svg);
+		}
+	}
+
+	.working-hours__text {
+		font-size: 30px;
+		line-height: 27px;
+		text-transform: uppercase;
+	}
 }
