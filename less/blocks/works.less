@@ -344,12 +344,15 @@
 	.works__picture-wrapper {
 		min-width: 294px;
 		height: 293px;
-
 	}
 
-	.works__item--month::after {
-		top: 35px;
-		right: 0;
+	.works__item--month {
+		&::after {
+			left: auto;
+			right: -100%;
+
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
+		}
 	}
 
 	.works__sublist {

@@ -1973,8 +1973,9 @@ img {
     height: 293px;
   }
   .works__item--month::after {
-    top: 35px;
-    right: 0;
+    left: auto;
+    right: -100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 5% 50%);
   }
   .works__sublist {
     justify-content: flex-start;
@@ -2134,5 +2135,47 @@ img {
     font-size: 30px;
     line-height: 27px;
     text-transform: uppercase;
+  }
+}
+@media (min-width: 1200px) {
+  .prices {
+    padding: 77px 0px 83px;
+  }
+  .prices::before {
+    content: none;
+  }
+  .prices__wrapper {
+    display: flex;
+  }
+  .prices__wrapper-top {
+    width: 640px;
+  }
+  .working-hours {
+    padding: 0;
+    margin-left: auto;
+    margin-top: 83px;
+    display: flex;
+    align-items: center;
+  }
+  .working-hours__wrapper {
+    padding: 35px 65px 22px;
+    width: 269px;
+    height: 291px;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .working-hours__wrapper::before {
+    width: 142px;
+    height: 139px;
+    margin: 0 auto 27px auto;
+    background-image: url(../img/clock-desktop.svg);
+  }
+  .working-hours__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: lowercase;
   }
 }
