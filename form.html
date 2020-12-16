@@ -179,41 +179,50 @@
 			</div>
 		</div>
 	</footer>
+	<!--
 
-	<section class="popup popup--login">
-		<h2 class="popup__title">Личный кабинет</h2>
-		<p class="popup__text">Введите свой логин и пароль, чтобы войти</p>
-		<form class="popup__form-login" action="https://echo.htmlacademy.ru" method="post">
-			<p class="popup__input-wrapper">
+	<section class="logform">
+		<h2 class="logform__title">Личный кабинет</h2>
+		<p class="logform__text">Введите свой логин и пароль, чтобы войти</p>
+		<form class="logform__form-login" action="https://echo.htmlacademy.ru" method="post">
+			<p class="logform__input-wrapper">
 				<label class="visually-hidden" for="login">Логин</label>
-				<input class="popup__login popup__login--icon" type="text" name=login placeholder="Логин">
+				<input class="logform__login-user" type="text" name=login placeholder="Логин">
 			</p>
-			<p class="popup__input-wrapper">
+			<p class="logform__input-wrapper">
 				<label class="visually-hidden" for="password">Пароль</label>
-				<input class="popup__password" type="password" name="password" placeholder="Пароль">
+				<input class="logform__login-password" type="password" name="password" placeholder="Пароль">
 			</p>
-			<p class="popup__input-wrapper">
-				<label class="popup__remember-me" for="remember">Запомните меня</label>
-				<input class="visually-hidden" type="checkbox" name="remember">
-				<a class="popup__restore" href="#">Я забыл пароль!</a>
-			</p>
-			<button class="button button__login" type="submit">Войти в личный кабинет</button>
+			<div class="logform__wrapper">
+				<p class="logform__input-wrapper logform__wrapper-top">
+					<label class="logform__remember-me" for="remember">Запомните меня</label>
+					<input class="visually-hidden" type="checkbox" name="remember">
+					<a class="logform__restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="logform__login-mobile" type="submit">Войти </button>
+				<button class="logform__login-other" type="submit">Войти в личный кабинет</button>
+				<button class="logform__close" type="button">Закрыть</button>
+			</div>
 		</form>
-		<button class="popup__close" type="button">Закрыть</button>
+	</section>
+-->
+	<section class="failure">
+		<h2 class="failure__title">Неудача</h2>
+		<p class="failure__text">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
+		<button class="failure__confirm">Ок</button>
 	</section>
 
-	<section class="popup popup--failure">
-		<h2 class="popup__title">Неудача</h2>
-		<p class="popup__text">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
-		<button class="popup__button button">Ок</button>
-	</section>
-
-	<section class="popup popup--success">
-		<h2 class="popup__title">Это успех!</h2>
-		<p class="popup__text">Ваша заявка отправлена. <br> Ожидайте, мы свяжемся с вами как только
+	<!--
+	<section class="success">
+		<h2 class="success__title">Это успех!</h2>
+		<p class="success__text">Ваша заявка отправлена. <br> Ожидайте, мы свяжемся с вами как только
 			будет минутка.</p>
-		<button class="popup__button button">Закрыть окно</button>
+		<button class="success__close">Закрыть окно</button>
 	</section>
+-->
+
+
+
 	<script src="scripts/main-nav.js"></script>
 </body>
 
