@@ -146,7 +146,8 @@
 }
 
 
-.logform__login-mobile {
+.logform__login-mobile,
+.logform__login-other {
 	display: block;
 	padding: 13px 15px;
 	margin-right: auto;
@@ -183,13 +184,86 @@
 	background-color: #f8f5f2;
 }
 
-
 @media (min-width:@tablet-width) {
+	.logform {
+		top: 129px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		padding: 53px 70px 57px;
+		width: 460px;
+		height: 500px;
+	}
+
+	.logform__title {
+		font-size: 40px;
+	}
+
+	.logform__login-user,
+	.logform__login-password {
+		padding-top: 24px;
+		padding-bottom: 24px;
+		width: 320px;
+
+		background-position: 278px center;
+
+		&::placeholder {
+			font-size: 24px;
+		}
+	}
+
+	.logform__wrapper {
+		width: 320px;
+	}
+
+
 	.logform__login-mobile {
 		display: none;
 	}
 
 	.logform__login-other {
 		display: block;
+
+		width: 100%;
+	}
+
+	.logform__close {
+		position: absolute;
+		top: 20px;
+		right: -40px;
+
+		font-size: 0;
+
+		width: 25px;
+		height: 25px;
+
+		border: none;
+		background: transparent;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 2px;
+
+			width: 35px;
+			height: 2px;
+
+			background-color: #e0e0e0;
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 10px;
+			left: 2px;
+
+			width: 35px;
+			height: 2px;
+
+			background-color: #e0e0e0;
+			transform: rotate(-45deg);
+		}
 	}
 }
