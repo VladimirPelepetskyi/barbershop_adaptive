@@ -20,6 +20,14 @@
 	}
 }
 
+@media (max-width:767px) {
+	.reviews__wrapper {
+		max-width: 630px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .reviews__title {
 	.text-reset;
 	margin-bottom: 35px;
@@ -136,6 +144,16 @@
 	.reviews__prev,
 	.reviews__next {
 		display: block;
+		outline: none;
+
+		&:hover {
+			border: 1px solid #D5C9BD;
+		}
+
+		&:active {
+			color: rgba(0, 0, 0, 0.3);
+			background-color: #D5C9BD;
+		}
 	}
 
 	.reviews__write {

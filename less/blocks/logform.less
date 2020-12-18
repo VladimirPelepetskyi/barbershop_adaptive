@@ -10,7 +10,7 @@
 	background-color: #f8f5f2;
 	box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
 	box-sizing: border-box;
-	z-index: 2; 
+	z-index: 2;
 
 }
 
@@ -54,12 +54,25 @@
 	background-image: url(../img/icon-user.svg);
 	background-position: 96% center;
 	background-repeat: no-repeat;
+	outline: none;
 
 	&::placeholder {
 		font-size: 18px;
 		line-height: 30px;
 		font-weight: normal;
 		color: #000000;
+	}
+
+	&:hover {
+		border: 1px solid #D5C9BD;
+	}
+
+	&:focus {
+		border: 1px solid #826550;
+	}
+
+	&:active {
+		border: 1px solid #999999;
 	}
 }
 
@@ -75,12 +88,25 @@
 	background-image: url(../img/icon-password.svg);
 	background-position: 96% center;
 	background-repeat: no-repeat;
+	outline: none;
 
 	&::placeholder {
 		font-size: 18px;
 		line-height: 30px;
 		font-weight: normal;
 		color: #000000;
+	}
+
+	&:hover {
+		border: 1px solid #D5C9BD;
+	}
+
+	&:focus {
+		border: 1px solid #826550;
+	}
+
+	&:active {
+		border: 1px solid #999999;
 	}
 }
 
@@ -143,6 +169,10 @@
 
 		background-color: #000000;
 	}
+
+	&:hover::after {
+		content: none;
+	}
 }
 
 
@@ -162,6 +192,22 @@
 
 	border: none;
 	background-color: #826550;
+	outline: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #6A4D38;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.3);
+		background-color: #6A4D38;
+	}
+
+	&:disabled {
+		cursor: default;
+		background-color: #AEAEAE;
+	}
 }
 
 .logform__login-other {
@@ -182,6 +228,20 @@
 
 	border: 1px solid #e5ddd5;
 	background-color: #f8f5f2;
+	outline: none;
+	cursor: pointer;
+
+	@media (max-width:767px) {
+
+		&:hover {
+			border: 1px solid #D5C9BD;
+		}
+
+		&:active {
+			color: rgba(0, 0, 0, 0.3);
+			background-color: #D5C9BD;
+		}
+	}
 }
 
 @media (min-width:@tablet-width) {
@@ -206,6 +266,7 @@
 		width: 320px;
 
 		background-position: 278px center;
+
 
 		&::placeholder {
 			font-size: 24px;
@@ -253,6 +314,10 @@
 			transform: rotate(45deg);
 		}
 
+		&:hover::before {
+			background-color: #826550;
+		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -264,6 +329,10 @@
 
 			background-color: #e0e0e0;
 			transform: rotate(-45deg);
+		}
+
+		&:hover::after {
+			background-color: #826550;
 		}
 	}
 }

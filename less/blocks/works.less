@@ -6,6 +6,14 @@
 	background-color: @bg-works;
 }
 
+@media (max-width:767px) {
+	.works-wrapper {
+		max-width: 630px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 .works__title {
 	.text-reset;
 	margin-bottom: 33px;
@@ -220,6 +228,15 @@
 		text-decoration: none;
 
 		border: 1px solid #e5ddd5;
+
+		&:hover {
+			border: 1px solid #D5C9BD;
+		}
+
+		&:active {
+			color: rgba(0, 0, 0, 0.3);
+			background-color: #D5C9BD;
+		}
 
 	}
 
