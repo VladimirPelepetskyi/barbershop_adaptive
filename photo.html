@@ -142,7 +142,7 @@
 							<td class="prices__field">1 500 руб.</td>
 						</tr>
 						<tr class="prices__item">
-							<td  class="prices__number">2</td>
+							<td class="prices__number">2</td>
 							<td class="prices__name">Современный вариант</td>
 							<td class="prices__extra">(с мытьём головы)</td>
 							<td class="prices__field">1 500 руб.</td>
@@ -212,24 +212,22 @@
 			</div>
 		</div>
 	</footer>
-
-<!--
-	<section class="logform">
+	<section class="logform logform-none">
 		<h2 class="logform__title">Личный кабинет</h2>
 		<p class="logform__text">Введите свой логин и пароль, чтобы войти</p>
 		<form class="logform__form-login" action="https://echo.htmlacademy.ru" method="post">
 			<p class="logform__input-wrapper">
 				<label class="visually-hidden" for="login">Логин</label>
-				<input class="logform__login-user" type="text" name=login placeholder="Логин">
+				<input class="logform__login-user" type="text" name=login id="login" placeholder="Логин">
 			</p>
 			<p class="logform__input-wrapper">
 				<label class="visually-hidden" for="password">Пароль</label>
-				<input class="logform__login-password" type="password" name="password" placeholder="Пароль">
+				<input class="logform__login-password" type="password" id="password" name="password" placeholder="Пароль">
 			</p>
 			<div class="logform__wrapper">
 				<p class="logform__input-wrapper logform__wrapper-top">
 					<label class="logform__remember-me" for="remember">Запомните меня</label>
-					<input class="visually-hidden" type="checkbox" name="remember">
+					<input class="visually-hidden" type="checkbox" id="remember" name="remember">
 					<a class="logform__restore" href="#">Я забыл пароль!</a>
 				</p>
 				<button class="logform__login-mobile" type="submit">Войти </button>
@@ -238,8 +236,8 @@
 			</div>
 		</form>
 	</section>
--->
 	<script src="scripts/main-nav.js"></script>
+	<script src="scripts/logform.js"></script>
 </body>
 
 </html>

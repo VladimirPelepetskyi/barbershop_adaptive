@@ -63,30 +63,30 @@
 					<fieldset class="sign-up__contacts">
 						<ul class="contacts__list-top">
 							<li class="contacts__item">
-								<input class="contacts__input" type="text" name="Name" placeholder="Имя">
+								<input class="contacts__input" type="text" name="Name" placeholder="Имя" aria-label="Введите ваше имя">
 							</li>
 							<li class="contacts__item">
-								<input class="contacts__input" type="text" name="Surname" placeholder="Фамилия">
+								<input class="contacts__input" type="text" name="Surname" placeholder="Фамилия" aria-label="Введите вашу фамилию">
 							</li>
 							<li class="contacts__item">
-								<input class="contacts__input" type="text" name="Patronymic" placeholder="Отчество">
+								<input class="contacts__input" type="text" name="Patronymic" placeholder="Отчество" aria-label="Введите ваше отчество">
 							</li>
 						</ul>
 						<ul class="contacts__list-bottom">
 							<li class="contacts__item">
-								<input class="contacts__input" type="text" name="mobile-phone" placeholder="Контактный телефон">
+								<input class="contacts__input" type="text" name="mobile-phone" placeholder="Контактный телефон" aria-label="Введите ваш контактный телефон">
 							</li>
 							<li class="contacts__item">
-								<input class="contacts__input" type="email" name="email" placeholder="Контактный e-mail">
+								<input class="contacts__input" type="email" name="email" placeholder="Контактный e-mail" aria-label="Введите ваш e-mail">
 							</li>
 							<li class="contacts__item">
-								<textarea class="contacts__input contacts__input--message" name="information-for-the-master" cols="30" rows="10" placeholder="Доп. информация для мастера"></textarea>
+								<textarea class="contacts__input contacts__input--message" name="information-for-the-master" cols="30" rows="10" placeholder="Доп. информация для мастера" aria-label="Введите дополнительную информацию для мастера"></textarea>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset class="sign-up__beard-model beard-model">
 						<div class="beard-model__wrapper">
-							<legend class="beard-model__title">Выберите модель бороды:</legend>
+							<h2 class="beard-model__title">Выберите модель бороды:</h2>
 						</div>
 						<ul class="beard-model__list">
 							<li class="beard-model__item beard-model__item--admiral">
@@ -113,7 +113,7 @@
 					</fieldset>
 					<fieldset class="sign-up__additonal-services additonal-services">
 						<div class="additonal-services__wrapper">
-							<legend class="additonal-services__title">Дополнительные услуги:</legend>
+							<h2 class="additonal-services__title">Дополнительные услуги:</h2>
 						</div>
 						<ul class="additonal-services__list">
 							<li class="additonal-services__item">
@@ -179,24 +179,22 @@
 			</div>
 		</div>
 	</footer>
-	<!--
-
-	<section class="logform">
+	<section class="logform logform-none">
 		<h2 class="logform__title">Личный кабинет</h2>
 		<p class="logform__text">Введите свой логин и пароль, чтобы войти</p>
 		<form class="logform__form-login" action="https://echo.htmlacademy.ru" method="post">
 			<p class="logform__input-wrapper">
 				<label class="visually-hidden" for="login">Логин</label>
-				<input class="logform__login-user" type="text" name=login placeholder="Логин">
+				<input class="logform__login-user" type="text" name=login id="login" placeholder="Логин">
 			</p>
 			<p class="logform__input-wrapper">
 				<label class="visually-hidden" for="password">Пароль</label>
-				<input class="logform__login-password" type="password" name="password" placeholder="Пароль">
+				<input class="logform__login-password" type="password" id="password" name="password" placeholder="Пароль">
 			</p>
 			<div class="logform__wrapper">
 				<p class="logform__input-wrapper logform__wrapper-top">
 					<label class="logform__remember-me" for="remember">Запомните меня</label>
-					<input class="visually-hidden" type="checkbox" name="remember">
+					<input class="visually-hidden" type="checkbox" id="remember" name="remember">
 					<a class="logform__restore" href="#">Я забыл пароль!</a>
 				</p>
 				<button class="logform__login-mobile" type="submit">Войти </button>
@@ -205,29 +203,22 @@
 			</div>
 		</form>
 	</section>
--->
-	
-<!--
-	<section class="failure">
+	<section class="failure failure-none">
 		<h2 class="failure__title">Неудача</h2>
 		<p class="failure__text">Что-то пошло не так. Проверьте выделенные красным поля формы.</p>
 		<button class="failure__confirm">Ок</button>
 	</section>
 
--->
-
-<!--
-<section class="success">
-	<h2 class="success__title">Это успех!</h2>
-	<p class="success__text">Ваша заявка отправлена. <br> Ожидайте, мы свяжемся с вами как только
-		будет минутка.</p>
-	<button class="success__close">Закрыть окно</button>
-</section>-->
-
-
-
+	<section class="success success-none">
+		<h2 class="success__title">Это успех!</h2>
+		<p class="success__text">Ваша заявка отправлена. <br> Ожидайте, мы свяжемся с вами как только будет минутка.</p>
+		<button class="success__close">Закрыть окно</button>
+	</section>
 
 	<script src="scripts/main-nav.js"></script>
+	<script src="scripts/logform.js"></script>
+	<!--	<script src="scripts/failure.js"></script>-->
+	<script src="scripts/success.js"></script>
 </body>
 
 </html>

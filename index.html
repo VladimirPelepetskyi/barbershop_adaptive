@@ -106,23 +106,23 @@
 			<div class="advantages__wrapper slider">
 				<h2 class="visually-hidden">Наши преимущества</h2>
 				<ul class="advantages__list slider__list">
-					<li class="advantages_item advantages_item--fast slider__item--show-adv">
+					<li class="advantages_item advantages_item--fast slider__item--show-adv advit1-js">
 						<h3 class="advantages_title">Быстро</h3>
 						<p class="advantages_description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
 					</li>
-					<li class="advantages_item advantages_item--cool">
+					<li class="advantages_item advantages_item--cool advit2-js">
 						<h3 class="advantages_title">Круто</h3>
 						<p class="advantages_description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
 					</li>
-					<li class="advantages_item advantages_item--price">
+					<li class="advantages_item advantages_item--price advit3-js">
 						<h3 class="advantages_title">Дорого</h3>
 						<p class="advantages_description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 					</li>
 				</ul>
 				<p class="advantages__toggles slider__toggles">
-					<button class="slider__toggle slider__toggle--active" type="button">1</button>
-					<button class="slider__toggle" type="button">2</button>
-					<button class="slider__toggle " type="button">3</button>
+					<button class="advantage__toggle advantage__toggle--active advt1-js" type="button">1</button>
+					<button class="advantage__toggle advt2-js" type="button">2</button>
+					<button class="advantage__toggle advt3-js" type="button">3</button>
 				</p>
 			</div>
 		</section>
@@ -157,7 +157,7 @@
 				<h2 class="reviews__title">Отзывы о нас</h2>
 				<a class="reviews__write button" href="#">Оставить свой</a>
 				<div class="reviews__list slider__list">
-					<blockquote class="reviews__item slider__item--show-rev">
+					<blockquote class="reviews__item slider__item--show-rev revit1-js">
 						<p class="reviews__author-picture">
 							<picture>
 								<source media="(min-width: 1200px)" srcset="img/picture-john-index.jpg 1x, img/picture-john-index@2x.jpg 2x">
@@ -170,7 +170,7 @@
 							<p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
 						</div>
 					</blockquote>
-					<blockquote class="reviews__item">
+					<blockquote class="reviews__item revit2-js">
 						<p class="reviews__author-picture">
 							<picture>
 								<source media="(min-width: 1200px)" srcset="img/picture-travis-index.jpg 1x, img/picture-travis-index@2x.jpg 2x">
@@ -183,7 +183,7 @@
 							<p class="reviews__text">Отличную стрижку мне сделали ребята</p>
 						</div>
 					</blockquote>
-					<blockquote class="reviews__item">
+					<blockquote class="reviews__item revit3-js">
 						<p class="reviews__author-picture">
 							<picture>
 								<source media="(min-width: 1200px)" srcset="img/picture-ivan-index.jpg 1x, img/picture-ivan-index@2x.jpg 2x">
@@ -199,10 +199,10 @@
 					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
 					<button class="reviews__next" type="button">Следующий отзыв</button>
 				</div>
-				<p class="advantages__toggles slider__toggles">
-					<button class="slider__toggle slider__toggle--active" type="button">1</button>
-					<button class="slider__toggle" type="button">2</button>
-					<button class="slider__toggle" type="button">3</button>
+				<p class="reviews__toggles slider__toggles">
+					<button class="review__toggle review__toggle--active revt1-js" type="button">1</button>
+					<button class="review__toggle revt2-js" type="button">2</button>
+					<button class="review__toggle revt3-js" type="button">3</button>
 				</p>
 			</div>
 		</section>
@@ -243,35 +243,36 @@
 			</div>
 		</div>
 	</footer>
-	
-<!--
-<section class="logform">
-	<h2 class="logform__title">Личный кабинет</h2>
-	<p class="logform__text">Введите свой логин и пароль, чтобы войти</p>
-	<form class="logform__form-login" action="https://echo.htmlacademy.ru" method="post">
-		<p class="logform__input-wrapper">
-			<label class="visually-hidden" for="login">Логин</label>
-			<input class="logform__login-user" type="text" name=login placeholder="Логин">
-		</p>
-		<p class="logform__input-wrapper">
-			<label class="visually-hidden" for="password">Пароль</label>
-			<input class="logform__login-password" type="password" name="password" placeholder="Пароль">
-		</p>
-		<div class="logform__wrapper">
-			<p class="logform__input-wrapper logform__wrapper-top">
-				<label class="logform__remember-me" for="remember">Запомните меня</label>
-				<input class="visually-hidden" type="checkbox" name="remember">
-				<a class="logform__restore" href="#">Я забыл пароль!</a>
-			</p>
-			<button class="logform__login-mobile" type="submit">Войти </button>
-			<button class="logform__login-other" type="submit">Войти в личный кабинет</button>
-			<button class="logform__close" type="button">Закрыть</button>
-		</div>
-	</form>
-</section>
--->
 
+
+	<section class="logform logform-none">
+		<h2 class="logform__title">Личный кабинет</h2>
+		<p class="logform__text">Введите свой логин и пароль, чтобы войти</p>
+		<form class="logform__form-login" action="https://echo.htmlacademy.ru" method="post">
+			<p class="logform__input-wrapper">
+				<label class="visually-hidden" for="login">Логин</label>
+				<input class="logform__login-user" type="text" name=login id="login" placeholder="Логин">
+			</p>
+			<p class="logform__input-wrapper">
+				<label class="visually-hidden" for="password">Пароль</label>
+				<input class="logform__login-password" type="password" id="password" name="password" placeholder="Пароль">
+			</p>
+			<div class="logform__wrapper">
+				<p class="logform__input-wrapper logform__wrapper-top">
+					<label class="logform__remember-me" for="remember">Запомните меня</label>
+					<input class="visually-hidden" type="checkbox" id="remember" name="remember">
+					<a class="logform__restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="logform__login-mobile" type="submit">Войти </button>
+				<button class="logform__login-other" type="submit">Войти в личный кабинет</button>
+				<button class="logform__close" type="button">Закрыть</button>
+			</div>
+		</form>
+	</section>
 	<script src="scripts/main-nav.js"></script>
+	<script src="scripts/advantages__toggles.js"></script>
+	<script src="scripts/reviews__toggles.js"></script>
+	<script src="scripts/logform.js"></script>
 </body>
 
 </html>
