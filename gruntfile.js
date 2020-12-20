@@ -34,6 +34,18 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		uglify: {
+			style: {
+				files: {
+					"scripts/logform.min.js": ["scripts/logform.js"],
+					"scripts/advantages__toggles.min.js": ["scripts/advantages__toggles.js"],
+					"scripts/failure.min.js": ["scripts/failure.js"],
+					"scripts/main-nav.min.js": ["scripts/main-nav.js"],
+					"scripts/reviews__toggles.min.js": ["scripts/reviews__toggles.js"],
+					"scripts/success.min.js": ["scripts/success.js"]
+				}
+			}
+		},
 		imagemin: {
 			images: {
 				options: {
@@ -78,7 +90,8 @@ module.exports = function (grunt) {
 		watch: {
 			style: {
 				files: ["less/**/*.less"],
-				tasks: ["less", "postcss", "csso"]
+				files: ["scripts/**/*.js"],
+				tasks: ["less", "postcss", "csso", "uglify"]
 			}
 		}
 	});
@@ -88,6 +101,7 @@ module.exports = function (grunt) {
 	grunt.registerTask("build", [
 		"less",
 		"postcss",
-		"csso"
+		"csso",
+		"uglify"
 	]);
 };

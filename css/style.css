@@ -2487,6 +2487,9 @@ img {
       -ms-flex-order: 1;
           order: 1;
 }
+.prices__extra-tablet {
+  display: none;
+}
 .prices__field {
   text-align: right;
 }
@@ -2572,6 +2575,12 @@ img {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+  .prices__extra-mobile {
+    display: none;
+  }
+  .prices__extra-tablet {
+    display: table-cell;
   }
   .prices__field {
     width: 24.6875%;

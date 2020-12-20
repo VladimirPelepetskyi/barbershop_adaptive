@@ -14,8 +14,6 @@ failure__close.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	failure.classList.add("failure-none")
 });
-
-
 window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
 		evt.preventDefault();
