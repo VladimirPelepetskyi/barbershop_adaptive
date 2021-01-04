@@ -89,8 +89,7 @@ module.exports = function (grunt) {
 		},
 		watch: {
 			style: {
-				files: ["less/**/*.less"],
-				files: ["scripts/**/*.js"],
+				files: ["less/**/*.less", "scripts/**/*.js"],
 				tasks: ["less", "postcss", "csso", "uglify"]
 			}
 		}
@@ -103,5 +102,9 @@ module.exports = function (grunt) {
 		"postcss",
 		"csso",
 		"uglify"
+	]);
+	
+		grunt.registerTask("go", [
+		"less"
 	]);
 };
